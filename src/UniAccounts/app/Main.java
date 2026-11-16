@@ -25,7 +25,7 @@ public class Main {
                         "Template Student",
                         "template@univ.dz"
                 )
-                .level("L2")
+                .level("L3")
                 .major("Computer Science")
                 .courses(List.of("IHM", "GL", "Prop"))
                 .build();
@@ -36,25 +36,25 @@ public class Main {
 
         StudentAccount student1 = prototype.create(
                 "2026001",
-                "Ahmed Ali",
-                "ahmed@univ.dz"
+                "ISMAIL LABBI",
+                "ismail2006@univ.dz"
         );
 
         StudentAccount student2 = prototype.create(
                 "2026002",
-                "Sara Mohamed",
-                "sara@univ.dz"
+                "HAIDAR",
+                "HAIDAR@univ.dz"
         );
 
         // Builder: Create another customized account
         StudentAccount student3 =
                 new StudentAccount.Builder(
                         "2026003",
-                        "Yacine Omar",
-                        "yacine@univ.dz"
+                        "ALI",
+                        "ali@univ.dz"
                 )
                 .phone("0550000000")
-                .level("M1")
+                .level("M2")
                 .major("Networks")
                 .scholarship(true)
                 .courses(List.of(
@@ -151,16 +151,16 @@ public class Main {
  // Test Prototype Copy
  System.out.println("\n===== Prototype Test =====");
 
- System.out.println("Ahmed Level: " +
+ System.out.println("ISMAIL LABBILevel: " +
         student1.getLevel());
 
- System.out.println("Sara Level: " +
+ System.out.println("HAIDAR Level: " +
         student2.getLevel());
 
- System.out.println("Ahmed Courses: " +
+ System.out.println("ISMAIL LABBI Courses: " +
         student1.getCourses());
 
- System.out.println("Sara Courses: " +
+ System.out.println("HAIDAR Courses: " +
         student2.getCourses());
         // Final result
         System.out.println("\n===== Final Result =====");
